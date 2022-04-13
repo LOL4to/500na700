@@ -1,0 +1,94 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 10
+  background-color: $dark
+  padding: 70px 0 78px
+  color: $primary
+  &__row
+    display: flex
+  &__logo
+    margin-right: 212px
+  &__list
+    display: flex
+    font-size: 16px
+    line-height: 24px
+    margin-top: 13px
+  &__sublist
+    display: none
+    position: absolute
+    margin-top: 75px
+    &--active
+      display: block
+  &__item
+    position: relative
+    &:not(:last-child) 
+      margin-right: 30px
+    &-link
+      position: relative
+      white-space: nowrap
+      display: inline-block
+      color: inherit
+  &__subitem
+    white-space: nowrap
+    margin-top: 30px
+    &-link
+      color: inherit
+  &__logo
+    width: 42px
+    height: 50px
+
+
+
+
+
+//Для мобильной версии 
+.header-mob
+  &__list
+    font-size: 16px
+    line-height: 24px
+    margin-top: 13px
+    display: none
+    &--visible
+      display: none
+  &__sublist
+    display: none
+    position: absolute
+    margin-top: 75px
+    &--active
+      display: block
+  &__item
+    position: relative
+    &:not(:last-child) 
+      margin-right: 30px
+    &-link
+      position: relative
+      white-space: nowrap
+      display: inline-block
+      color: inherit
+  &__subitem
+    white-space: nowrap
+    margin-top: 30px
+    &-link
+      color: inherit
+    &-img
+  &__closeblock
+    position: absolute;
+    top: 46px;
+    right: 19px;
+  &__empty
+    display: none
+    &--visible
+      display: block
+    &--1
+      margin-top: 225px
+    &--2
+      margin-top: 90px
+    &--3
+      margin-top: 0
+    &--4
+      margin-top: 145px
+    &--5
+      margin-top: 250px

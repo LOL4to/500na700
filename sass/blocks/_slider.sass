@@ -1,0 +1,51 @@
+.slider
+  padding-bottom: 30px
+  background-color: $dark
+  &__row
+  &__swiper
+    width: 100%
+    height: 725px
+    margin-left: 0
+    overflow: hidden
+  &-wrapper
+  &__slide
+    height: 650px
+    border-radius: 8px
+    overflow: hidden
+  &__main
+    width: 100%
+    height: 100%
+    position: relative
+    z-index: 0
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__title
+    position: absolute
+    bottom: 25%
+    left: 8%
+    color: $primary
+    font-family: 'Mplus1p-medium'
+    font-style: normal
+    font-weight: 500
+    font-size: 80px
+    line-height: 85px
+  &__button
+    position: absolute
+    bottom: 0
+    z-index: 10
+    width: 100px
+    height: 30px
+    background-color: transparent
+    background-position: center
+    background-repeat: no-repeat
+    border: none
+    cursor: pointer
+
+  &__button--prev
+    left: 40%
+    background-image: url(../img/arrow-left.svg)
+  &__button--next
+    right: 40%
+    background-image: url(../img/arrow-right.svg)

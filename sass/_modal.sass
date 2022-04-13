@@ -1,0 +1,95 @@
+.modal
+  &__overlay
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(69,146,255, 0.2)
+    z-index: 50
+    visibility: hidden
+    opacity: 0
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    width: 478px
+    position: fixed
+    top: 50%
+    left: 50%
+    z-index: 55
+    padding: 33px 88px
+    background-color: #262D33
+    transform: translate(-50%, -50%)
+    color: #ffffff
+    border-radius: 25px
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.5s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__scroll
+    // width: 302px
+    height: 100%
+  &__close
+    position: absolute
+    right: 18px
+    top: 17px
+    text-decoration: none
+  &__title
+    margin: 0
+    font-style: normal
+    font-size: 18px
+    font-weight: bold
+    line-height: 23px
+    text-transform: uppercase
+    text-align: center
+  &__input
+    width: 100%
+    height: 50px
+    padding: 0 23px
+    margin-top: 15px
+    background-color: #ffffff
+    border-radius: 4px
+    border: none
+    &-group
+      width: 100%
+  &__message
+    width: 100%
+    min-height: 123px
+    padding: 18px 23px
+    background-color: #FFFFFF
+    border-radius: 4px
+    border: none
+    resize: none
+    outline: none
+    &-group
+      width: 100%
+      margin-top: 15px
+  &__button
+    min-width: 160px
+    min-height: 50px
+    padding: 18px
+    margin-top: 15px
+    color: $dark
+    background-color: #ffffff
+    border: none
+    border-radius: 4px
+  &__info
+    font-style: normal
+    font-weight: bold
+    color: #E0E0E0
+    padding: 10px
+    margin-top: 15px
+  &__form
+    width: 100%
+    margin: auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
